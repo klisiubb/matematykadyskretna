@@ -58,6 +58,34 @@ for (int i = 1; i < n-1; i++)
     }
 }
 
+//szukanie cykli o dlugosci 3
+
+
+// TODO WYKMINIC TĄ MACIERZ C W SUMIE + POPRAWIC WAGI
+
+int licznik_cykli = 0;
+
+for (int i = 1; i < n-1; i++)
+{
+    for (int j = i+1; j < n; j++)
+    {
+        if (A[i, j]==1)
+        {
+            for (int k = 1; k < n; k++)
+            {
+                if(A[i,k] == 1 && A[j,k] == 1)
+                {
+                    licznik_cykli++;
+                    double waga = W[i, j]+W[i, k]+W[j, k];
+                    Console.WriteLine("waga:" +waga);
+                    //TO JEST CHYBA ZJEBANE?XD
+                }
+            }
+        }
+    }
+}
+
+
 // KOD TESTOWY TYLKO DO RYSOWANIA GRAFU NA https://graphonline.ru/en/
 
 //int z = 1;
@@ -65,4 +93,4 @@ for (int i = 1; i < n-1; i++)
 //{
 //    Console.Write(z%Math.Sqrt(A.Length)==0 ? $"{e}\n" : e);
 //    z+=1;
-//}
+//}   
