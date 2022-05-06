@@ -1,29 +1,8 @@
-﻿
-// Graf, okreslanie rozmiaru
-
-// n = liczba wierzchołków grafu, graf ma byc symetryczna tablica
-
-//Graf wypelnianie macierzy zerami
-
-//Macierz wierzchołków
-//Macierz wag
-
-
-//Podawane prawdopodobienstwa istnienia krawedzi
-
-
-
-//szukanie cykli o dlugosci 3
-
-
-// TODO WYKMINIC TĄ MACIERZ C W SUMIE + POPRAWIC WAGI
-
-using System.Linq;
-
-internal class Cykle
+﻿using System.Linq;
+public class Cycles
 {
     public List<int[]> cykl;
-    public Cykle()
+    public Cycles()
     {
         cykl = new List<int[]>();
     }
